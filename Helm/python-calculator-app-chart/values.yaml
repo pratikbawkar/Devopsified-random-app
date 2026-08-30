@@ -1,0 +1,4 @@
+image:
+  repository: pratikbawkar29/python-calculator-app
+  tag: v1
+  pullPolicy: IfNotPresent
