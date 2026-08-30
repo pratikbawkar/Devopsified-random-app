@@ -1,4 +1,4 @@
 image:
   repository: pratikbawkar29/python-calculator-app
-  tag: "33331585977"
+  tag: "33331631358"
   pullPolicy: IfNotPresent
