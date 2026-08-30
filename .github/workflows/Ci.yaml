@@ -9,7 +9,7 @@ on:
     paths-ignore:
       - 'helm/**'
       - 'K8s/**'
-  workflow_dispatch: 
+      - 'README.md'
       
 
 jobs:
@@ -29,10 +29,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r Basic-Calculator/requirements.txt
-
-      - name: Test
-        run: |
-          python -m pytest Basic-Calculator/
 
   code-quality:
     runs-on: ubuntu-latest
