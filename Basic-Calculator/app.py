@@ -1,18 +1,23 @@
 from flask import Flask, render_template, request
 
+
 app = Flask(__name__)
+
 
 def add(a, b):
     answer = a + b
     return f"{a} + {b} = {answer}"
 
+
 def sub(a, b):
     answer = a - b
     return f"{a} - {b} = {answer}"
 
+
 def mul(a, b):
     answer = a * b
     return f"{a} * {b} = {answer}"
+
 
 def div(a, b):
     if b != 0:
@@ -20,6 +25,7 @@ def div(a, b):
         return f"{a} / {b} = {answer}"
     else:
         return "Cannot divide by zero."
+
 
 @app.route("/", methods=["GET", "POST"])
 def calculator():
@@ -41,8 +47,9 @@ def calculator():
 
     return render_template("index.html", result=result)
 
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000,debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
 
-#this comment is to test CI pipeline
+# This comment is to test CI pipeline
