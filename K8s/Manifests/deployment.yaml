@@ -1,0 +1,28 @@
+# Deployment for Python Flask Calculator Application
+
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: python-calculator-app
+  labels:
+    app: python-calculator-app
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: python-calculator-app
+
+  template:
+    metadata:
+      labels:
+        app: python-calculator-app
+
+    spec:
+      containers:
+        - name: python-calculator-app
+          image: pratikbawkar29/python-calculator-app:v1
+          ports:
+            - containerPort: 5000
