@@ -1,5 +1,5 @@
 
-# Devopsified Random App from Github
+# DevOpsifying a Python Flask Application — End-to-End CI/CD & GitOps on AWS EKS
 This project demonstrates how a simple Python Flask application can be transformed into a complete DevOps workflow using Docker, Kubernetes, AWS EKS, Helm, GitHub Actions, Docker Hub, NGINX Ingress, and Argo CD.
 
 ## The project started as a basic calculator application with no containerization, CI/CD, or Kubernetes deployment practices.
